@@ -1,0 +1,6 @@
+string = input("Enter words separated with space: ")
+list_of_words = string.split(" ")
+print(list_of_words)
+words = set(list_of_words)
+removeDuplicate = ' '.join(words)
+print(removeDuplicate)
