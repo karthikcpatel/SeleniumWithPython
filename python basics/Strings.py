@@ -63,6 +63,12 @@ for character in remove_characters:
 
 print(kp_string)
 
+# Replace more than character using for loop
+name = "aishwarya"
+for x in name:
+    name = name.replace("a","z")
+print(name)
+
 # The split() method splits the string into substrings if it finds instances of the separator
 string_split = "Hello, All!"
 print(string_split.split(","))

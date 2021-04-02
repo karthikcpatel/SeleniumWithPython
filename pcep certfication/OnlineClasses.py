@@ -1,8 +1,11 @@
-i = 1
-while(i<=5):
-    i = i+1
-    if i==3:
-        continue
-    print(i)
-print("********")
-print("********")
+def company_employees(*args):
+    for x in args:
+        print(x)
+employees = ["virat","rohit","bhuvi"]
+company_employees(*employees)
+
+def students(**kwargs):
+    for x,y in kwargs.items():
+        print(x,y)
+students_details = {"Kartik":"Patel","Aishwarya":"lastname"}
+students(**students_details)

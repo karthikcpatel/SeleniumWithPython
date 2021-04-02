@@ -11,11 +11,11 @@ name("Kartik","Patel")
 # return and yield in python
 def normal_function():
     return print("Bhavyesh is my friend")
-    print("Hello Everyone")
 normal_function()
 
 def generator_function():
     yield "Bhavyesh is my friend"
+#generator_function()
 output = generator_function()
 print(output)
 
