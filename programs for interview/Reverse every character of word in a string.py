@@ -9,4 +9,4 @@ print(reversed_sentence)
 
 sentence = input("Enter the sentence whose each words we want to reverse: ")
 for reversed_word in sentence.split(" "):
-    print(reversed_word[::-1])
+    print(reversed_word[::-1],end=' ')

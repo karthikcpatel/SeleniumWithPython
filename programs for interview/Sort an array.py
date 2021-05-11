@@ -1,4 +1,4 @@
-arr = [5, 2, 8, 7, 1];
+arr = [5, 2, 8, 7, 1]
 
 for i in range(0,len(arr)):
     for j in range(i+1,len(arr)):

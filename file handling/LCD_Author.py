@@ -16,9 +16,9 @@ import pyodbc
 import re
 from openpyxl import load_workbook
 
-samplefiledf = pd.read_excel(r'C:\Users\kartikp\OneDrive - S&P Global\Desktop\31st March_Files to be backfilled\KPRP_Article Spreadsheet.xlsx')
-authordetailsdf = pd.read_excel(r'C:\Users\kartikp\OneDrive - S&P Global\Desktop\31st March_Files to be backfilled\ArticleAuthor\LCD_Author_List.xlsx')
-newdf = pd.DataFrame([],columns = ['News_ID','Email','KeyPerson']) 
+samplefiledf = pd.read_excel(r'C:\Users\kartikp\OneDrive - S&P Global\Desktop\ArticleTable_914.xlsx')
+authordetailsdf = pd.read_excel(r'C:\Users\kartikp\OneDrive - S&P Global\Desktop\31st March_Files to be backfilled\ArticleAuthor\Sample_LCD_Author_List.xlsx')
+newdf = pd.DataFrame([],columns = ['News_ID','Email','KeyPerson'])
 
 #newdf2 = pd.DataFrame([],columns = ['News_ID','Author'])
 #matchedKeyfile = pd.DataFrame([],columns = ['News_ID','Author'])
@@ -83,7 +83,7 @@ for w in range (len(samplefiledf)):
        print("\nThis value does not exists in Dataframe")
        newdf2 = newdf2.append({'News_ID':x,'Email':p,'KeyPerson':v},ignore_index=True)
 
-newdf2.to_excel(r"C:\Users\kartikp\OneDrive - S&P Global\Desktop\31st March_Files to be backfilled\ArticleAuthor\LCDArticleAuthor.xlsx", engine='xlsxwriter',index=False)
+newdf2.to_excel(r"C:\Users\kartikp\OneDrive - S&P Global\Desktop\LCDArticleAuthor.xlsx", engine='xlsxwriter',index=False)
 
 for w in range (len(newdf3)):
     x = newdf3.loc[w,'News_ID']

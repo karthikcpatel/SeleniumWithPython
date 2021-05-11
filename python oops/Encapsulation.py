@@ -16,6 +16,7 @@ class Employee:
 obj = Employee('Kartik', 501245)
 # accessing using class method
 obj.printDetails()
+print(obj.name)
 # changing age using setter
 obj.setAccess(123456)
 obj.getAccess()

@@ -9,9 +9,15 @@ def name(fname,lname):
 name("Kartik","Patel")
 
 # return and yield in python
-def normal_function():
-    return print("Bhavyesh is my friend")
-normal_function()
+def sum( arg1, arg2 ):
+   # Add both the parameters and return them."
+    total = arg1 + arg2
+    print ("Inside the function: ", total)
+    return total;
+    print("Hello")
+# Now you can call sum function
+total = sum(10, 20);
+print ("Outside the function: ", total)
 
 def generator_function():
     yield "Bhavyesh is my friend"
@@ -25,7 +31,7 @@ output = generator_function_new()
 for i in output:
     print(i)
 
-# None in python function.
+# None in python function
 # The None keyword is used to define a null variable or an object. Its data type would be NoneType
 var = None
 if var is None:
@@ -33,13 +39,13 @@ if var is None:
 else:
     print("var has some value")
 
-#function having static parameters
+# Function having static parameters
 def student_name(a,b,c,d,e):
     print(a,b,c,d,e)
 student_name("kartik","dipika","chetan","payal","bhavyesh")
 
 # *args in function
-#passing list to a function
+# Passing list to a function
 def company_employees(*args):
     for x in args:
         print(x)

@@ -4,8 +4,7 @@ class humanBody(ABC):
 
     @abstractmethod
     def eyes(self):
-        print("They provide capability to see")
-        # GIT TEST
+        pass
 
 class bodyParts(humanBody):
     pass

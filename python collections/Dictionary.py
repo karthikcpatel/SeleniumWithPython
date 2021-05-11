@@ -23,7 +23,7 @@ kpdict["Kartik"] = ["Shah"]
 print(kpdict)
 
 # Update value in dictionary using update method
-kpdict.update({"Kartik":"Patel"})
+
 print(kpdict)
 
 # Remove an item from a key

@@ -16,3 +16,4 @@ class Employee:
 obj = Employee("Kartik","Patel")
 obj.printAllDetails()
 Employee.printAll("Everyone")
+print(obj.companyName)

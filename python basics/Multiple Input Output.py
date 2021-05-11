@@ -1,7 +1,3 @@
-x, y = input("Enter a two value: ").split()
+x, y = input("Enter a two values separated by comma: ").split(",")
 print("Number of boys: ", x)
 print("Number of girls: ", y)
-print()
-
-readfromconsole = input()
-print(readfromconsole)

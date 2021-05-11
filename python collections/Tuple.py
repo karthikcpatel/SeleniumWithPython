@@ -24,7 +24,6 @@ thistuple = ("apple", "banana", "cherry")
 y = list(thistuple)
 y.append("orange")
 thistuple = tuple(y)
-
 print(thistuple)
 
 # Join tuple using + operator
@@ -50,7 +49,7 @@ for i in complex_tuple:
     for j in i:
         print(j)
 
-#Unpack a tuple
+# Unpack a tuple
 fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
 (green, yellow, *red) = fruits
 print(green)

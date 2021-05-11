@@ -1,7 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
-from time import sleep
+import time
 
 driver = webdriver.Chrome('./chromedriver')
 driver.maximize_window()

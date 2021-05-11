@@ -10,9 +10,9 @@ import numpy as np
 import pyodbc
 from openpyxl import load_workbook
 
-instnissuerdf = pd.read_excel(r'C:\Users\kartikp\OneDrive - S&P Global\Desktop\31st March_Files to be backfilled\ArticleIndex\KPRP_IssuerInstn_Python_31st March.xlsx')
-newsissuerdf = pd.read_excel(r'C:\Users\kartikp\OneDrive - S&P Global\Desktop\31st March_Files to be backfilled\ArticleIndex\KPRP_NewsIssuer_Python_31st March.xlsx')
-articleIndex = pd.read_excel(r'C:\Users\kartikp\OneDrive - S&P Global\Desktop\31st March_Files to be backfilled\ArticleIndex\KPRP_ArticleIndex_Python_31st March.xlsx')
+instnissuerdf = pd.read_excel(r'C:\Users\kartikp\OneDrive - S&P Global\Desktop\ArticleIssuerInstn_Input for Python.xlsx')
+newsissuerdf = pd.read_excel(r'C:\Users\kartikp\OneDrive - S&P Global\Desktop\NewsIssuer_Input Python.xlsx')
+articleIndex = pd.read_excel(r'C:\Users\kartikp\OneDrive - S&P Global\Desktop\ArticleIndex_InputPython.xlsx')
 articleIndexPrimary = articleIndex[articleIndex['PrimarySubject'] == 1]
 articleIndexPrimary.reset_index(inplace = True, drop= True)
 articleIndexPrimary = articleIndexPrimary.reindex(columns = np.append( articleIndexPrimary.columns.values, ['Issuer','KeyInstn','KeyInDocs']))
@@ -74,7 +74,7 @@ for q in range(len(articleIndex)):
     if u == 0 :
         newdf2 = newdf2.append({'LcdKeyDoc': r, 'KeyDoc': s,'Subject':t,'PrimarySubject':u}, ignore_index=True)
     
-newdf2.to_excel(r'C:\Users\kartikp\OneDrive - S&P Global\Desktop\31st March_Files to be backfilled\ArticleIndex\Issuer_Article_Instn.xlsx', engine='xlsxwriter', index=False)
+newdf2.to_excel(r'C:\Users\kartikp\OneDrive - S&P Global\Desktop\Issuer_Article_Instn.xlsx', engine='xlsxwriter', index=False)
 
          
 #newsissuerdf = newsissuerdf.assign(Present=newsissuerdf.ISSUER_ID.isin(instnissuerdf.Issuer_ID).astype(int))

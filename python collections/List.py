@@ -90,6 +90,7 @@ print(final_list)
 listtostring = ["ahm","pune","hyd"]
 str = ",".join(listtostring)
 print(str)
+print(type(str))
 
 # Tuple inside list
 complex_list = [("one","two"),("three","four")]
