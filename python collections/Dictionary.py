@@ -23,11 +23,17 @@ kpdict["Kartik"] = ["Shah"]
 print(kpdict)
 
 # Update value in dictionary using update method
+kpdict = {"Kartik":"Patel","Bhavyesh":"Patel","Dipika":"Patil"}
+kpdict_new = {"1":"Updated value"}
+kpdict.update(kpdict_new)
+print(kpdict_new)
 
+# Remove an item from a key using pop
+kpdict.pop("Dipika")
 print(kpdict)
 
-# Remove an item from a key
-kpdict.pop("Dipika")
+# Remove an item from a key using del
+del kpdict["Bhavyesh"]
 print(kpdict)
 
 # Copy of a dictionary

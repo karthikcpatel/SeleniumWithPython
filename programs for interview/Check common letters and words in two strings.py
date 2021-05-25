@@ -11,5 +11,5 @@ str2 = "my company is Google"
 str1_words = set(str1.split(" "))
 str2_words = set(str2.split(" "))
 
-common_words = set(str1_words)&set(str2_words)
+common_words = (str1_words)&(str2_words)
 print("The common words in string are: ",common_words)

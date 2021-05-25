@@ -8,3 +8,11 @@ for i in string:
         consonants=consonants+1
 print("Number of vowels are:", vowels)
 print("Number of consonants are:", consonants)
+
+string="hippopotatumus"
+for i in string:
+    print(i)
+
+string="hippopotatumus"
+for i in range(0,len(string)):
+    print(string[i])
