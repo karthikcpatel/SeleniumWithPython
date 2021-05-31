@@ -6,6 +6,7 @@ list3 = [i + j for i, j in zip(list1, list2)]
 lis4 = list(zip(list1, list2))
 print(list3)
 print(lis4)
+list4 = zip(list1,list2)
 #3. Given a Python list of numbers. Turn every item of a list into its square
 aList = [1, 2, 3, 4, 5, 6, 7]
 aList =  [x * x for x in aList]
@@ -32,8 +33,10 @@ for x, y in zip(list1, list2[::-1]):
 
 #5. Remove empty strings from list of strings
 list1 = ["Mike", "", "Emma", "Kelly", "", "Brad"]
-resList = list(filter(None, list1))
-print(resList)
+for x in list1:
+    if "" in list1:
+        list1.remove("")
+print(list1)
 
 #6. Add items 7000 after 6000 in following Python list:
 list1 = [10, 20, [300, 400, [5000, 6000], 500], 30, 40]
@@ -42,14 +45,14 @@ print(list1)
 
 #7. Remove duplicate elements from list
 list1 = [5, 20, 15, 20, 25, 50, 20]
-remove = []
+removed = []
 for i in list1:
     count = list1.count(i)
     if list1.count(i)==1:
-        remove.append(i)
+        removed.append(i)
     elif list1.count(i)>1:
         pass
-list1 = remove
+list1 = removed
 print("The list after removing duplicate elements are: ",list1)
 
 #8. Replace first 20 with 200 in given list
