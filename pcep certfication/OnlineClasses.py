@@ -1,5 +1,5 @@
-list1 = [5, 20, 15, 20, 25, 50, 20]
-for x in list1:
-    if x == 20:
-        list1.remove(20)
-print(list1)
+tuple1 = (11, [22, 33], 44, 55)
+list1 = list(tuple1)
+list1[1][0]=222
+tuple_new = tuple(list1)
+print(tuple_new)
