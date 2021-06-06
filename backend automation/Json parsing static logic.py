@@ -11,5 +11,5 @@ with open(r"C:\Work\Software Testing Tutorials\Web Services\API Automation\sampl
     print(json_aceInhibitors_dict)
     json_medications_name_li = json_aceInhibitors_dict[0]
     print(json_medications_name_li)
-    json_medications_name_dict = json_medications_name_li['name']
+    json_medications_name_dict = json_medications_name_li['price']
     print(json_medications_name_dict)

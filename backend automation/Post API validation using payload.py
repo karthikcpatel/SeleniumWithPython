@@ -2,7 +2,7 @@ import requests
 from AllPayloads import *
 from utilities.configurations import *
 
-post_response = requests.post(get_config['API']['endpoint']+'/api/users',json=add_user("kartik"),)
+post_response = requests.post(get_config()['API']['endpoint']+'/api/users',json=add_user("kartik"),verify=False)
 print(post_response.json())
 print(post_response.text)
 

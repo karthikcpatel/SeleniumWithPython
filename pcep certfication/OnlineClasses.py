@@ -1,5 +1,20 @@
-tuple1 = (11, [22, 33], 44, 55)
-list1 = list(tuple1)
-list1[1][0]=222
-tuple_new = tuple(list1)
-print(tuple_new)
+kpset = {"kartik","swapan","change","hi"}
+kplist = ["in","the","list"]
+kptuple = ("got","it")
+
+kpset.update(kplist)
+print(kpset)
+
+kpset.update(kptuple)
+print(kpset)
+
+# delete the values
+kpset.remove("hi")
+print(kpset)
+
+kpset.discard("got")
+print(kpset)
+
+# list - ordered and it can be changed
+# tuple - ordered , but it cannot be changed
+# set - unordered, and it can be changed
