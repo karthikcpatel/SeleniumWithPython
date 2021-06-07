@@ -20,9 +20,9 @@ import requests
 # print(output_dict_2)
 # output_dict_3 = output_dict_2['text']
 # print(output_dict_3)
-#C:\Users\kartikp\PycharmProjects\Selenium_Python\backend automation\utilities\info.txt
+#C:\Users\kartikp\PycharmProjects\Selenium_Python\backend automationold\utilities\info.txt
 def getPassword():
-    file = open(r"C:\Users\kartikp\PycharmProjects\Selenium_Python\backend automation\utilities\info.txt",'r')
+    file = open(r"/backend automationold\utilities\info.txt", 'r')
     content = file.read()
     file.close()
 

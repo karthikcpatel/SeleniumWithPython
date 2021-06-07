@@ -6,7 +6,9 @@ driver.get("https://learn.letskodeit.com/p/practice")
 driver.maximize_window()
 time.sleep(5)
 
-driver.execute_script("window.scrollBy(0,250)","")
+driver.find_element_by_xpath("//a[text()='https://courses.letskodeit.com/practice']").click()
+
+driver.execute_script("window.scrollBy(0,500)","")
 print("Successfully scrolled till a specific pixel")
 
 driver.get("https://www.countries-ofthe-world.com/flags-of-the-world.html")

@@ -4,7 +4,7 @@ import json
 post_response = requests.post('https://reqres.in/api/users/2',json={
                 "name": "morpheus",
                 "job": "zion resident"
-},)
+},verify=False)
 print(post_response.json())
 print(post_response.text)
 
