@@ -17,8 +17,8 @@ list2 = ["Dear", "Sir"]
 for x in list1:
     for y in list2:
         print(x+y)
-#resList = [x+y for x in list1 for y in list2]
-#print(resList)
+resList = [x+y for x in list1 for y in list2]
+print(resList)
 
 #4. Given a two Python list.
 # Iterate both lists simultaneously such that list1 should display item in original order and list2 in reverse order

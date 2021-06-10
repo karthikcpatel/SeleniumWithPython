@@ -39,7 +39,6 @@ sampleDict = {
     "age": 25,
     "salary": 8000,
     "city": "New york"
-
 }
 keys=["name","salary"]
 for k in keys:
@@ -107,3 +106,10 @@ sampleDict = {
 
 sampleDict['emp3']['salary'] = 8500
 print(sampleDict)
+
+#11. Update multiple values in a dictionary
+# Input myDict = {'one': 'Sally', 'two': 13, 'three': 'Dingra', 'four': 'Lilop'};
+# Output {‘one’: ‘Sally’, ‘two’: 13, ‘three’: ‘Dingra’, ‘four’: ‘Lilop’, ‘five’: ‘Olive’, ‘six’: ‘Nivo’, ‘seven’: ‘Xavier’}
+myDict = {'one': 'Sally', 'two': 13, 'three': 'Dingra', 'four': 'Lilop'};
+myDict.update({'five':'Olive','six':'Nivo','seven':'Xavier'});
+print(myDict);

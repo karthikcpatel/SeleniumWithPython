@@ -7,7 +7,7 @@ for key,value in kpdict.items():
     print(key,value)
 
 # Fetch a value based on key
-x = kpdict["Kartik"]
+x = kpdict['Kartik']
 print(x)
 
 # Fetch all keys
