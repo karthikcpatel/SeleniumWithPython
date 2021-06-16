@@ -1,6 +1,6 @@
 import requests
 
-get_response = requests.get('https://reqres.in/api/users',
+get_response = requests.get("https://reqres.in/api/users",
                         params={'page':'2'},verify=False)
 print(get_response.text)
 

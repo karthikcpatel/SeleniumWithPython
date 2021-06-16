@@ -14,10 +14,8 @@ for handle in handles:
     if handle != parent_window:
         driver.switch_to.window(handle)
         print(driver.title)
-    #driver.switch_to.window(handle)
-    #print(driver.current_window_handle)
-    #print(driver.title)
-    #time.sleep(3)
-    #driver.close()
+        driver.close()
+        driver.switch_to.window(parent_window)
+        print(driver.title)
 
 driver.quit()

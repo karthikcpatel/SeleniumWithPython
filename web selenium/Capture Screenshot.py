@@ -1,5 +1,6 @@
-from selenium import webdriver
 import moment
+from selenium import webdriver
+import time
 
 driver = webdriver.Chrome('./chromedriver')
 driver.get("https://www.python.org")

@@ -6,6 +6,8 @@ driver.get("https://learn.letskodeit.com/p/practice")
 driver.maximize_window()
 time.sleep(5)
 
+driver.find_element_by_xpath("//a[text()='https://courses.letskodeit.com/practice']").click()
+
 driver.execute_script("window.scrollBy(0,800)","")
 print("Successfully scrolled till a specific pixel")
 

@@ -1,5 +1,5 @@
 def add_user(name):
-    body ={
+    body = {
     "name": name,
     "job": "leader"
 }

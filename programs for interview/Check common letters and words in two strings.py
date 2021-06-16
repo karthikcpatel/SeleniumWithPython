@@ -1,6 +1,6 @@
 # This logic needs to be modified
 str1 = "Kartik"
-str2 = "Google"
+str2 = "Googlek"
 set_str1 = set(str1)
 set_str2 = set(str2)
 common_letters = list(set_str1 & set_str2)
