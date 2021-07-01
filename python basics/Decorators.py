@@ -1,4 +1,4 @@
-#This is to test whether we are able to upload to GIT successfully.
+#This is to test whether we are able to upload to GIT successfully
 def div(a,b):
     print(a/b)
 
