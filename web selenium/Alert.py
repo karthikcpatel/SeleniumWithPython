@@ -18,3 +18,4 @@ driver.switch_to.alert.dismiss()
 print("Successfully clicked dismiss")
 
 driver.close()
+###
