@@ -82,3 +82,10 @@ for i in range(1, 11):
     for j in range(1, 11):
         print(i * j, end=" ")
     print("\t\t")
+
+num = 4
+for i in range(2,num//2):
+    if num%i==0:
+        print("The number is prime number")
+    else:
+        print("The number is not a prime number")

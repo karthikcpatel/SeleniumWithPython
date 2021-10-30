@@ -1,16 +1,14 @@
-#This is to test whether we are able to upload to GIT successfully
-def div(a,b):
-    print(a/b)
+#Passing a function as an argument
 
-def smart_div(func):
+def dec1(func1):
+    def nowexec():
+        print("Executing now")
+        func1()
+        print("Executed")
+    return nowexec()
 
-    def inner(a,b):
-        if a<b:
-            a,b = b,a
-        return func(a,b)
+@dec1
+def who_is_kartik():
+    print("Kartik is a good boy")
 
-    return inner
-
-div = smart_div(div)
-
-div(2,4)
+who_is_kartik()

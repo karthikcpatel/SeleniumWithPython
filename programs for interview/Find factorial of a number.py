@@ -7,4 +7,4 @@ elif num==0:
 else:
     for i in range(1,num+1):
         fact = fact*i
-        print("The factorial of",num,"is",fact)
+print("The factorial of",num,"is",fact)

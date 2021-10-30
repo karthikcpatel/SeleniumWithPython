@@ -7,7 +7,8 @@ class AccessModifiers:
     public = "This is a public variable"
     _protect = "This is a protected variable"
     __private = "This is a private variable"
-    def _init_(self):
+
+def _init_(self):
         print("The constructor is initialized")
 
 x = AccessModifiers()

@@ -9,3 +9,6 @@ temp = list[0]
 list[0]=list[-1]
 list[-1]=temp
 print("The list after swapping first and last values is ", list)
+
+# Without using third or temp variable, it can be done as below:
+# newList[0], newList[-1] = newList[-1], newList[0]

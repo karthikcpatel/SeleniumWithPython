@@ -3,7 +3,7 @@ str1 = "Kartik"
 str2 = "Googlek"
 set_str1 = set(str1)
 set_str2 = set(str2)
-common_letters = list(set_str1 & set_str2)
+common_letters = set_str1 & set_str2
 print("The common letters are: ", common_letters)
 
 str1 = "my name is Kartik"

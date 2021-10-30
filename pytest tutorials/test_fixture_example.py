@@ -16,5 +16,10 @@ def test_go_to_page(test_setup):
     print(driver.title)
     time.sleep(5)
 
+def test_go_to_page_again(test_setup):
+    driver.get("https://www.python.org")
+    print(driver.title)
+    time.sleep(5)
+
 # def test_teardown(test_setup):
 #     driver.quit()

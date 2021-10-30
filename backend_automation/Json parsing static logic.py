@@ -1,15 +1,11 @@
 import json
 
-with open(r"C:\Work\Software Testing Tutorials\Web Services\API Automation\sample json for practise.json") as file:
+with open(r"C:\Miscellaneous\Software Testing Tutorials\Interview Questions & Answers\Miscellaneous Documents\samplejson.json") as file:
     json_data = json.load(file)
     print(json_data)
-    json_medications = json_data['medications']
-    print(json_medications)
-    json_aceInhibitors_li = json_medications[0]
-    print(json_aceInhibitors_li)
-    json_aceInhibitors_dict = json_aceInhibitors_li['aceInhibitors']
-    print(json_aceInhibitors_dict)
-    json_medications_name_li = json_aceInhibitors_dict[0]
-    print(json_medications_name_li)
-    json_medications_name_dict = json_medications_name_li['price']
-    print(json_medications_name_dict)
+    json_all = json_data['Geeks']
+    print(json_all)
+    json_outer = json_all[0]
+    print(json_outer)
+    json_inner = json_outer['Geekname']
+    print(json_inner)
