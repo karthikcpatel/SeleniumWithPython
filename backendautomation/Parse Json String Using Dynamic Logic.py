@@ -8,4 +8,4 @@ with open(r"C:\Miscellaneous\Software Testing Tutorials\Interview Questions & An
     for list_names in json_all:
         print(list_names)
     first_medicine_list = (list_names['Geekname'])
-    print(fsirst_medicine_list)
+    print(first_medicine_list)
