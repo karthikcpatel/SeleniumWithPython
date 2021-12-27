@@ -20,12 +20,6 @@ pipeline {
       steps {
         echo 'Bees Buzzing!'
       }
-      post{
-        success {
-          archiveArtifcats 'target/*.hpi,target/*.jpi'  
-        }
-      }
     }
-
   }
 }
