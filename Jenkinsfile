@@ -8,7 +8,7 @@ pipeline {
           allowMissing: false,
           alwaysLinkToLastBuild: false,
           keepAll: true,
-          reportDir: 'coverage',
+          reportDir: 'leetcode',
           reportFiles: 'index.html',
           reportName: "RCov Report"
         ])
