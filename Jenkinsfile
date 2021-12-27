@@ -9,7 +9,7 @@ pipeline {
           allowMissing: false,
           alwaysLinkToLastBuild: false,
           keepAll: true,
-          reportDir: 'web selenium\\screenshots',
+          reportDir: 'web selenium',
           reportFiles: 'index.html',
           reportName: "KP Pipeline Report"
         ])
