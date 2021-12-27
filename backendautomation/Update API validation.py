@@ -1,5 +1,4 @@
 import requests
-import json
 
 post_response = requests.post('https://reqres.in/api/users/2',json={
                 "name": "morpheus",

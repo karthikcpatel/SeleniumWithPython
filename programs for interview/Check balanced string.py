@@ -1,12 +1,26 @@
-def check(my_string):
-    paranthesis = ['()', '{}', '[]']
-    while any(x in my_string for x in paranthesis):
-        for para in paranthesis:
-            my_string = my_string.replace(para, '')
-    return not my_string
+def arePairs(open,close):
+    if open=='[' and close==']':
+        return True
+    if open=='{' and close=='}':
+        return True
+    if open=='(' and close==')':
+        return True
+    return False
 
+def Balanced(string):
+    stack=[]
+    for i in range(len(string)):
+        if string[i]=='[' or string[i]=='{' or string[i]=='(':
+            stack.append(string[i])
+        elif string[i] == ']' or string[i] == '}' or string[i] == ')':
+            if arePairs(stack[-1],string[i] or len(stack)!=0):
+                stack.pop()
+            else:
+                return False
+    if len(stack)==0:
+        return True
+    else:
+        return False
 
-# Driver code
-string = "{[]{()}}"
-print(string, "-", "Balanced"
-if check(string) else "Unbalanced")
+string="[()]{}{[()()]()}"
+print(Balanced(string))

@@ -11,7 +11,7 @@ driver.find_element_by_xpath("//a[text()='https://courses.letskodeit.com/practic
 driver.execute_script("window.scrollBy(0,800)","")
 print("Successfully scrolled till a specific pixel")
 
-table_text = driver.find_element_by_xpath("//table[@id='product']").text
+table_text = driver.find_element("//table[@id='product']").text
 print(table_text)
 print("Successfully printed text from web table")
 

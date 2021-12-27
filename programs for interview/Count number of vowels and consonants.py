@@ -12,6 +12,7 @@ print("Number of consonants are:", consonants)
 string="hippopotatumus"
 for i in string:
     print(i)
+print("*********")
 
 string="hippopotatumus"
 for i in range(0,len(string)):

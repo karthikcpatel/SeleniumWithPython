@@ -1,4 +1,4 @@
-# The map() function applies a given function to each item of an iterable (list, tuple etc.) and returns an iterator.
+# The map() function executes a specified function for each item in an iterable. The item is sent to the function as a parameter..
 
 sentence1 = "Karti&*k #Pate,l"
 sentence2 = "I need to work very hard to learn more about algorithms in Python!"
@@ -6,9 +6,9 @@ sentence2 = "I need to work very hard to learn more about algorithms in Python!"
 def solution(sentence):
     for p in "!?',;.&*#":
         sentence = sentence.replace(p, '')
-    words = sentence.split()
+    words = sentence.split(" ")
     avg_word = sum(map(len, words)) / len(words)
-    return avg_word
+    print (avg_word)
 
-print(solution(sentence1))
-print(solution(sentence2))
+solution(sentence1)
+solution(sentence2)

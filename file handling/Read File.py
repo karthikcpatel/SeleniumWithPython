@@ -1,6 +1,6 @@
 #open() method returns file object.
 #read() method is used for reading content of file.
-file = open(r"C:\Users\kartikp\\Downloads\kp.txt","r")
+file = open(r"C:\Users\kartik.patel\Downloads\kp.txt","r")
 print(file.read())
 file.close()
 

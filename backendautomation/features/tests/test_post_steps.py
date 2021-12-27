@@ -1,5 +1,5 @@
 from pytest_bdd import scenario, given, when, then
-from backendautomation.features.forms.test_steps import BackendAutomation
+from backendautomation.features.forms.test_steps import *
 
 backend = BackendAutomation()
 

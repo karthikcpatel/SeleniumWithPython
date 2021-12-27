@@ -1,14 +1,15 @@
-#Passing a function as an argument
+# Python program to illustrate functions
+# can be passed as arguments to other functions
+def shout(text):
+    return text.upper()
 
-def dec1(func1):
-    def nowexec():
-        print("Executing now")
-        func1()
-        print("Executed")
-    return nowexec()
+def whisper(text):
+    return text.lower()
 
-@dec1
-def who_is_kartik():
-    print("Kartik is a good boy")
+def greet(func):
+    # storing the function in a variable
+    greeting = func("""Hi, I am created by a function passed as an argument.""")
+    print(greeting)
 
-who_is_kartik()
+greet(shout)
+greet(whisper)
