@@ -1,6 +1,5 @@
 import moment
 from selenium import webdriver
-import time
 from selenium.webdriver.chrome.service import Service
 
 chrome_driver=Service(r'C:\Users\kartik.patel\PycharmProjects\SeleniumWithPython\web selenium\chromedriver.exe')
