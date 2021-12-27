@@ -4,7 +4,14 @@ pipeline {
     stage('Buzz Buzz') {
       steps {
         echo 'Bees Buzz'
-        junit '**/surefire-reports/**/*.xml'
+        publishHTML (target: [
+          allowMissing: false,
+          alwaysLinkToLastBuild: false,
+          keepAll: true,
+          reportDir: 'coverage',
+          reportFiles: 'index.html',
+          reportName: "RCov Report"
+        ])
       }
     }
 
