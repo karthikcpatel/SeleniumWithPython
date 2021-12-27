@@ -9,9 +9,9 @@ pipeline {
           allowMissing: false,
           alwaysLinkToLastBuild: false,
           keepAll: true,
-          reportDir: 'leetcode',
+          reportDir: 'web selenium\screenshots',
           reportFiles: 'index.html',
-          reportName: "RCov Report"
+          reportName: "KP Pipeline Report"
         ])
       }
     }
