@@ -14,10 +14,10 @@ def user_has_access_to_hit_all_post_requests():
 
 @when('user hits post request for create users')
 def user_hits_post_request_for_create_users():
-    #backend.post_create_users()
+    backend.post_create_users()
     print("When got executed")
 
 @then('post request should be successful')
 def all_requests_should_be_successful():
-    #backend.verify_post_response_code()
+    backend.verify_post_response_code()
     print("Then got executed")

@@ -20,10 +20,10 @@ def user_hits_get_request_for_list_of_users():
 
 @when('user hits get request for single user')
 def user_hits_get_request_for_single_user():
-    #backend.get_single_user()
+    backend.get_single_user()
     print("And got executed")
 
 @then('all requests should be successful')
 def all_requests_should_be_successful():
-    #backend.verify_status_code()
+    backend.verify_status_code()
     print("Then got executed")
