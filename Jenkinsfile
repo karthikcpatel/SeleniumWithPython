@@ -1,15 +1,17 @@
 pipeline {
   agent any
   stages {
-    stage ('Build'){
+    stage('Buzz Buzz') {
       steps {
-        echo 'This is executed from build stage'
+        echo 'Bees Buzz'
       }
     }
-    stage ('Test'){
+
+    stage('Bees Bees') {
       steps {
-        echo 'This is executed from test stage'
+        echo 'Bees Buzzing!'
       }
     }
+
   }
 }
