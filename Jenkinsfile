@@ -4,6 +4,7 @@ pipeline {
     stage('Buzz Buzz') {
       steps {
         echo 'Bees Buzz'
+        archive (includes: 'pkg/*.gem')
         publishHTML (target: [
           allowMissing: false,
           alwaysLinkToLastBuild: false,
