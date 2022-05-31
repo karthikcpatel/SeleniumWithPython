@@ -21,6 +21,5 @@ pipeline {
         echo 'Bees Buzzing!'
       }
     }
-
   }
 }
