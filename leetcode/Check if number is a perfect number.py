@@ -5,6 +5,6 @@ for i in range(1,num):
     if remainder == 0:
         sum = sum + i
 if sum == num:
-    print("given no. is perfect number")
+    print("The given no is perfect number")
 else:
-    print("given no. is not a perfect number")
+    print("The given no is not a perfect number")

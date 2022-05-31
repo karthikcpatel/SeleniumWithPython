@@ -1,12 +1,14 @@
 from selenium import webdriver
-import time
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.by import By
 
-driver = webdriver.Chrome('./chromedriver')
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 driver.maximize_window()
 driver.get("http://demo.automationtesting.in/Windows.html")
 driver.implicitly_wait(10)
 parent_window = driver.current_window_handle
-driver.find_element_by_xpath("//*[@id='Tabbed']/a/button").click()
+driver.find_element(By.XPATH,"//*[@id='Tabbed']/a/button").click()
 
 handles = driver.window_handles
 

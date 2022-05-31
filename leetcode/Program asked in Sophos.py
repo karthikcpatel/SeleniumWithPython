@@ -4,6 +4,7 @@ for i in array:
     if array.count(i)>1:
         temp_array.append(i)
 print(temp_array)
+print("***************")
 kpdict = {}
 for x in temp_array:
     if x not in kpdict.keys():

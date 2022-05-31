@@ -11,7 +11,6 @@ def my_func1():
     my_innerfunc()
 my_func1()
 
-
 # A variable outside function can be accessed from anywhere
 y = 30
 def myfunc2():

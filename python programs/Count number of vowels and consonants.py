@@ -1,0 +1,19 @@
+string = input("Enter string: ")
+vowels=0
+consonants=0
+for i in string:
+    if(i=='a' or i=='e' or i=='i' or i=='o' or i=='u' or i=='A' or i=='E' or i=='I' or i=='O' or i=='U'):
+        vowels=vowels+1
+    else:
+        consonants=consonants+1
+print("Number of vowels are:", vowels)
+print("Number of consonants are:", consonants)
+
+string="hippopotatumus"
+for i in string:
+    print(i)
+print("*********")
+
+string="hippopotatumus"
+for i in range(0,len(string)):
+    print(string[i])
