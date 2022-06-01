@@ -19,4 +19,4 @@ time.sleep(3)
 driver.switch_to.alert.dismiss()
 print("Successfully clicked dismiss")
 
-driver.close()
+driver.close() #Successfully closed the driver.
