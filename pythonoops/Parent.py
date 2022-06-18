@@ -4,11 +4,11 @@
 class Parent:
 
     def __init__(self, fname, lname):
-        self.firstname = fname
-        self.lastname = lname
+        self.fname = fname
+        self.lname = lname
 
     def printname(self):
-        print(self.firstname, self.lastname)
+        print(self.fname, self.lname)
 
     def add(self,a,b):
         if __name__ == '_main_':

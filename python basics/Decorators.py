@@ -1,5 +1,6 @@
 # Python program to illustrate functions
 # can be passed as arguments to other functions
+# Decorators can be extremely useful as they allow the extension of an existing function, without any modification to the original function source code
 def shout(text):
     return text.upper()
 

@@ -1,4 +1,4 @@
-class Dhanji(ABC):
+class Dhanji():
 
     def grandParent(self):
         print("Hey! I am the grandparent")

@@ -13,5 +13,5 @@ string2 = "patel"
 string2 = string1+string2
 string1 = string2[0: (len(string2) - len(string1))] #kartikpatel-kartik = #patel
 print(string1)
-string2 = string2[len(string2):]
+string2 = string2[len(string1):]
 print(string2)

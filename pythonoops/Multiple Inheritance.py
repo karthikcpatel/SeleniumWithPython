@@ -7,7 +7,7 @@ class GrandParent:
     def printGrandParent(self):
         print(self.name, self.age)
 
-    def printHelloWorld(self):
+    def printHelloWorldFromGrandFather(self):
         print("Hey! This is hello world from grand parent class")
 
 class Parent:
@@ -20,15 +20,16 @@ class Parent:
     def printParent(self):
         print(self.name, self.age, self.salary)
 
-    def printHelloWorld(self):
+    def printHelloWorldFromFather(self):
         print("Hey! This is hello world from parent class")
 
 class Child(Parent, GrandParent):
     pass
 
 x = Child("Chetan","Patel",50000)
-x.printGrandParent()
-x.printHelloWorld()
+x.printParent()
+x.printHelloWorldFromFather()
+x.printHelloWorldFromGrandFather()
 
 #y = Child("Dhanji",85, 15)
 #y.printParent()
