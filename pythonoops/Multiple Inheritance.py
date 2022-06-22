@@ -26,7 +26,7 @@ class Parent:
 class Child(Parent, GrandParent):
     pass
 
-x = Child("Chetan","Patel",50000)
+x = Child("Chetan","Patel",5000)
 x.printParent()
 x.printHelloWorldFromFather()
 x.printHelloWorldFromGrandFather()

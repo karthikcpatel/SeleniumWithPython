@@ -9,9 +9,7 @@ driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 driver.get("https://jqueryui.com/droppable/")
 driver.maximize_window()
 time.sleep(5)
-
 driver.execute_script("window.scrollBy(0,200)","")
-
 driver.switch_to.frame(0)
 
 from_element = driver.find_element_by_id("draggable")

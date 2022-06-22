@@ -1,9 +1,9 @@
 from selenium import webdriver
 import time
 from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 
-chrome_driver=Service('C:/Users/kartik.patel/Downloads/chromedriver.exe')
-driver = webdriver.Chrome(service=chrome_driver)
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 driver.get("https://testautomationpractice.blogspot.com/")
 driver.maximize_window()
 print("Successfully maximized the window")

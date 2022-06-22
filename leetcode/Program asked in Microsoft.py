@@ -1,5 +1,5 @@
+string = "aabbccdaa"
 new_string = ""
-string = "aabbccda"
 count = 1
 for i in range(0,len(string)-1):
     if string[i] == string[i+1]:
