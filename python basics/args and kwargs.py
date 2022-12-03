@@ -3,8 +3,8 @@
 def company_employees(*args):
     for x in args:
         print(x)
-employees = ["prashant","kartik","maulik","nikhil"]
-company_employees(*employees)
+#employees = ["prashant","kartik","maulik","nikhil"]
+company_employees("prashant","kartik","maulik","nikhil")
 
 # **kwargs in function
 #passing dictionary to a function

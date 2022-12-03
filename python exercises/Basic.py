@@ -17,7 +17,7 @@ for i in range(1,11):
 
 #3. Given a string, display only those characters that are present at even index number.
 string = "hippopotamus"
-for i in range(1,len(string),2):
+for i in range(0,len(string),2):
     print(string[i])
 
 #4. Given list of number return True if first and last number of list are same
@@ -33,7 +33,7 @@ else:
 kp_string = "kartik"
 n=3
 for i in range(3,len(kp_string)):
-    print(string[i])
+    print(kp_string[i])
 
 #6. Given list of numbers iterate and print only those are divisible by 5
 new_list = [10,20,33,46,55,70]

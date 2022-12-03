@@ -35,8 +35,8 @@ print("Kartik" in check_string)
 
 # We can also access elements in string using slicing
 string_slicing = "Kartik"
-print(string_slicing[5:1]) #for this case 1 will be included and 5 will be ignored
-print(string_slicing[-2:-6]) #for this case -1 will be last k
+print(string_slicing[5:6]) #for this case 1 will be included and 5 will be ignored
+print(string_slicing[-4:-5]) #for this case -1 will be last k
 
 # Converting string to uppercase
 string_upper = "Kartik"

@@ -7,10 +7,14 @@ from selenium.webdriver.common.by import By
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 driver.get("https://testautomationpractice.blogspot.com/")
 driver.maximize_window()
+print("Successfully maximized the window")
 time.sleep(3)
-driver.execute_script("window.scrollBy(0,1000)","")
-#driver.find_element(By.XPATH,"//a[text()='https://courses.letskodeit.com/practice']").click()
-table_text = driver.find_element(By.XPATH,"//tbody[1]")
-print(table_text.text)
-print("Successfully printed text from web table")
-driver.quit()
+
+driver.execute_script("window.scrollBy(0,250)","")
+driver.find_element(By.XPATH,"//select[@name='speed']").click()
+driver.find_element(By.XPATH,"//select[@name='speed']/option[1]").click()
+
+time.sleep(2)
+print("Successfully selected first value")
+
+driver.close() #Successfully closed the driver.

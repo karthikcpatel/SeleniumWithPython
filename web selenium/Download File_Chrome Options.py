@@ -7,8 +7,8 @@ from selenium.webdriver.common.by import By
 
 chromeOptions = Options()
 chromeOptions.add_experimental_option("prefs",{"download.default_directory":"C:\selenium with python"})
-driver = webdriver.Chrome('./chromedriver',options=chromeOptions)
-#driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()),options=chromeOptions)
+#driver = webdriver.Chrome('./chromedriver',options=chromeOptions)
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()),options=chromeOptions)
 driver.implicitly_wait(30)
 driver.get("http://demo.automationtesting.in/FileDownload.html")
 driver.maximize_window()

@@ -1,5 +1,5 @@
 # Print a list
-kplist = ["Kartik","Payal","Dipika"]
+kplist = ["Kartik","Chetan","Nikhil"]
 print(kplist)
 
 # Loop through a list

@@ -5,11 +5,11 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
-driver.get("https://courses.letskodeit.com/practice")
+driver.get("https://testautomationpractice.blogspot.com/")
 driver.maximize_window()
 time.sleep(3)
 
-driver.find_element(By.XPATH,"//a[text()='https://courses.letskodeit.com/practice']").click()
+driver.find_element(By.XPATH,"//h2[@class='title' and text()='Text Labels']").click()
 
 driver.execute_script("window.scrollBy(0,500)","")
 print("Successfully scrolled till a specific pixel")
