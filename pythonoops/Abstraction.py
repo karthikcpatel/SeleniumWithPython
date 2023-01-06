@@ -18,3 +18,43 @@ class bodyParts(humanBody):
 obj = bodyParts()
 obj.eyes()
 obj.ears()
+
+print("********** Second Example **********")
+
+from abc import ABC, abstractmethod
+
+class Animal(ABC):
+
+    # concrete method/normal method
+    def sleep(self):
+        print("Going to sleep in a while")
+
+    # concrete method/normal method
+    def eat(self):
+        print("Start eating")
+
+    @abstractmethod
+    def sound(self):
+        pass
+
+
+class Snake(Animal):
+    def sound(self):
+        print("I hiss")
+
+
+class Dog(Animal):
+    def sound(self):
+        print("I bark")
+
+
+class Lion(Animal):
+    def sound(self):
+        print("I roar")
+
+obj = Snake()
+obj.sound()
+obj = Dog()
+obj.sound()
+obj = Animal()
+obj.sound()

@@ -1,4 +1,4 @@
-#1. Given two integers return their sum. If summation of both numbers is greater than 100 retrun their average.
+#1. Take two integers from user and return their sum. If summation of both numbers is greater than 100 return their average.
 num1 = int(input("Enter the first number: "))
 num2 = int(input("Enter the second number: "))
 sum = num1+num2

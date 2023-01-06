@@ -10,7 +10,7 @@ driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 driver.maximize_window()
 driver.get("https://testautomationpractice.blogspot.com/")
 # The below code exemplifies implicit wait
-driver.implicitly_wait(10)
+driver.implicitly_wait(30)
 assert "Practice" in driver.title
 # The below code exemplifies explicit wait
 driver.get("https://www.google.com/")

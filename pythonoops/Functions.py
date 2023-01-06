@@ -8,26 +8,21 @@ def name(fname,lname):
     print(fname,lname)
 name("Kartik","Patel")
 
-# return and yield in python
-def sum( arg1, arg2 ):
-   # Add both the parameters and return them."
-    total = arg1 + arg2
-    print ("Inside the function: ", total)
-    return total;
-    print("Hello")
-# Now you can call sum function
-total = sum(10, 20);
-print ("Outside the function: ", total)
+# return in python
+def add(x, y):
+    result = x + y
+    return result
 
-def generator_function():
-    yield "Bhavyesh is my friend"
-#generator_function()
-output = generator_function()
-print(output)
+output = add(5, 4)
+print(f'Output of add(5, 4) function is {output}')
 
-def generator_function_new():
-    yield "Bhavyesh is my friend"
-output = generator_function_new()
+# yield in python
+def add(x, y):
+    result = x + y
+    yield result
+
+output = add(5, 4)
+print(f'Output of add(5, 4) function is {output}')
 for i in output:
     print(i)
 
@@ -42,7 +37,7 @@ else:
 # Function having static parameters
 def student_name(a,b,c,d,e):
     print(a,b,c,d,e)
-student_name("kartik","dipika","chetan","payal","bhavyesh")
+student_name("kartik","shilpi","chetan","payal","bhavyesh")
 
 # *args in function
 # Passing list to a function
@@ -63,8 +58,8 @@ college_students(**students)
 # Default parameter Value
 def my_function(name="Kartik"):
     print("My name is " +name)
-my_function("Dipika")
-my_function("Tvisha")
+my_function("Bhavyesh")
+my_function("Aishwariya")
 my_function()
 
 # Arbitrary arguments

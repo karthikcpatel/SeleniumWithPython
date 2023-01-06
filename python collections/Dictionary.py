@@ -1,5 +1,5 @@
 # Initialize a dictionary
-kpdict = {"Kartik":"Patel","Bhavyesh":"Patel","Dipika":"Patil"}
+kpdict = {"Kartik":"Patel","Bhavyesh":"Sharma","Chetan":"Patil"}
 print(kpdict)
 
 # Loop through a dictionary
@@ -23,7 +23,7 @@ kpdict["Kartik"] = ["Shah"]
 print(kpdict)
 
 # Update value in dictionary using update method
-kpdict = {"Kartik":"Patel","Bhavyesh":"Patel","Dipika":"Patil"}
+kpdict = {"Kartik":"Patel","Bhavyesh":"Sharma","Chetan":"Patil"}
 kpdict_new = {"1":"Updated value"}
 kpdict.update(kpdict_new)
 print(kpdict_new)
@@ -61,3 +61,7 @@ myfamily = {
 }
 
 print(myfamily)
+
+
+kpdict_new = {"Kartik":"Patel","Bhavyesh":"Sharma","Chetan":"Patil"}
+print(kpdict_new['Kartik'])

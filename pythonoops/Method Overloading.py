@@ -2,13 +2,13 @@ def sum(a, b):
     x = a + b
     print(x)
 
-def product(a, b, c):
+def sum(a, b, c):
     x = a + b + c
     print(x)
 
 #product(5,5)
 
-product(5, 5, 5)
+sum(5, 5, 5)
 
 class Human:
 
@@ -21,3 +21,9 @@ class Human:
 obj = Human()
 obj.sayHello()
 obj.sayHello("Kartik")
+
+print("********** Second Example **********")
+
+print(len("Programiz"))
+print(len(["Python", "Java", "C"]))
+print(len({"Name": "John", "Address": "Nepal"}))

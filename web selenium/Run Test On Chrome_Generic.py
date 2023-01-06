@@ -6,3 +6,10 @@ driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 driver.get("https://www.python.org")
 print(driver.title)
 driver.close()
+
+print("********** Example 2 **********")
+
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+driver.get("https://www.yahoo.com/")
+print(driver.title)
+driver.close()

@@ -16,8 +16,11 @@ for i in range(0,len(rows)):
     columns = rows[i].find_elements(By.TAG_NAME,"td")
 
     for j in range(0,len(columns)):
-        if columns[j].text == "FlipKart":
-            driver.find_element(By.XPATH,"//input[@type='checkbox']").click()
-            time.sleep(2)
+        if columns[j].text == "Amazon":
+            select_checkbox = columns[j].text
+            #driver.find_element(By.XPATH,"//input[@type='checkbox']").click()
+            #driver.find_element(By.XPATH, "//table[@id='customers']/tbody/tr["+i+"]/td["+j+"]//input[@type='checkbox']").click()
+            driver.find_element(By.XPATH,"//td[text()='"+select_checkbox+"']//preceding-sibling::td//input[@type='checkbox']").click()
+            time.sleep(3)
 
 driver.close()
