@@ -5,7 +5,8 @@
 # It saves CPU memory and RAM.
 
 # Here is an example of a python inbuilt iterator
-# value can be anything which can be iterate
+# value can be anything which can b
+# e iterate
 iterable_value = 'Geeks'
 iterable_obj = iter(iterable_value)
 

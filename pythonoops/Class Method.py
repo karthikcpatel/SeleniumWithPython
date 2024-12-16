@@ -1,22 +1,27 @@
-class Employee:
-    companyName = "S&P Global"
-    def __init__(self,fname,lname):
-        self.fname = fname
-        self.lname = lname
+class Person:
+    species = "Human"  # Class attribute
 
-    def printAllDetails(self):
-        print(self.fname,self.lname)
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
     @classmethod
-    def callCompanyName(cls):
-        return cls.companyName
+    def create_baby(cls, name):
+        # A factory method that creates an instance with a default age
+        return cls(name, age=0)
 
     @classmethod
-    def emp_details(cls,newCompany):
-        cls.companyName = newCompany
-        print(newCompany)
+    def set_species(cls, species_name):
+        # Modifies the class attribute
+        cls.species = species_name
 
-obj = Employee("Kartik","Patel")
-obj.printAllDetails()
-print(Employee.callCompanyName())
-Employee.emp_details("Amazon")
+
+# Creating instances using the factory method
+baby = Person.create_baby("John")
+print(baby.name)  # Output: John
+print(baby.age)   # Output: 0
+
+# Accessing and modifying the class attribute
+print(Person.species)  # Output: Human
+Person.set_species("Alien")
+print(Person.species)  # Output: Alien

@@ -6,6 +6,8 @@
 # Methods like __iter__() and __next__() are implemented automatically. So we can iterate through the items using next()
 # Finally, when the function terminates, StopIteration is raised automatically on further calls
 
+# https://herovired.com/learning-hub/blogs/generators-in-python/
+
 # A simple generator function
 def my_gen():
     n = 1
@@ -23,3 +25,20 @@ def my_gen():
 
 for item in my_gen():
     print(item)
+
+print("*************************")
+
+def square_of_sequence(x):
+    for i in range(x):
+        yield i*i
+
+gen=square_of_sequence(5)
+while True:
+    try:
+        print ("Received on next(): ", next(gen))
+    except StopIteration:
+        break
+
+squres = square_of_sequence(5)
+for sqr in squres:
+    print(sqr)

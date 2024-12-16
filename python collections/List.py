@@ -19,8 +19,18 @@ print(mixed_list)
 
 # Add elements to a list
 kplist_add = ["First","Second","Third","Fourth"]
-kplist_add.append("Fifth")
+kplist_add.append("Sixth")
 print(kplist_add)
+
+kplist_1 = [1,2,3,4]
+kplist_2 = [5,6,7]
+kplist_1.append(kplist_2)
+print(kplist_1)
+
+kplist_1 = [1,2,3,4]
+kplist_2 = [5,6,7]
+kplist_1.extend(kplist_2)
+print(kplist_1)
 
 # Insert elements in list using index position
 kplist_insert = ["One","Two","Three"]
@@ -29,7 +39,7 @@ print(kplist_insert)
 
 # Add any iterable to a list using extend
 newlist = ["One","Two"]
-newtuple = ("One","Two")
+newtuple = ("Three","Four")
 newlist.extend(newtuple)
 print(newlist)
 

@@ -11,5 +11,5 @@ class Student(Teacher):
   pass
 
 obj = Student()
-# As soon as an ibject of class is created a constructor would be invoked.
+# As soon as an object of class is created a constructor would be invoked.
 # If we explicitly create a constructor with some request, it would serve that request
